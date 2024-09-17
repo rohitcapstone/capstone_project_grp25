@@ -1,0 +1,4 @@
+mkdir tour-guide-bot
+cd tour-guide-bot
+npm init -y
+npm install dialogflow googlemaps
