@@ -1,0 +1,113 @@
+/*<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUa5Fbm6vL5gYkP5Itz2iO0F0vaI60txW5Md5xcp3Cf0tvZ5IQp2uukO+G1D" crossorigin="anonymous">*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light gray background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-container {
+    width: 400px;
+    height: 600px;
+    background-color: #ffffff; /* White background */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.chat-messages {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #f1f1f1;
+}
+
+.message {
+    margin-bottom: 10px;
+    max-width: 75%;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.message.bot {
+    background-color: #007bff;
+    color: white;
+    text-align: left;
+    align-self: flex-start;
+}
+
+.message.user {
+    background-color: #e9ecef; /* Light gray for user messages */
+    color: #343a40; /* Dark text */
+    text-align: right;
+    align-self: flex-end;
+}
+
+.chat-input-container {
+    display: flex;
+    border-top: 1px solid #dee2e6; /* Border for input */
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.chat-input {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ced4da;
+    border-radius: 20px;
+    margin-right: 10px;
+    outline: none;
+}
+
+.chat-input:focus {
+    border-color: #007bff;
+}
+
+.send-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.send-button:hover {
+    background-color: #0056b3;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #007bff;
+    border-radius: 10px;
+}
+
+/* Responsive design for mobile screens */
+@media (max-width: 500px) {
+    .chat-container {
+        width: 100%;
+        height: 100%;
+    }
+}
